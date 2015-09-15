@@ -1,0 +1,27 @@
+{
+  "name": "RaspberryPi-IO-Project",
+  "version": "1.0.0",
+  "description": "PI_IO_Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spencermeyer/RaspberryPi-IO-Project.git"
+  },
+  "keywords": [
+    "Use",
+    "the",
+    "IO",
+    "on",
+    "the",
+    "Raspberry"
+  ],
+  "author": "spencer meyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spencermeyer/RaspberryPi-IO-Project/issues"
+  },
+  "homepage": "https://github.com/spencermeyer/RaspberryPi-IO-Project"
+}
