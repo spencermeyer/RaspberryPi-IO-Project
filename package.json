@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/spencermeyer/RaspberryPi-IO-Project/issues"
   },
-  "homepage": "https://github.com/spencermeyer/RaspberryPi-IO-Project"
+  "homepage": "https://github.com/spencermeyer/RaspberryPi-IO-Project",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
