@@ -3,6 +3,8 @@
 // Build a controller
 var express  = require('express');
 var app      = express();                // create our app w/ express
+// var gpio = require("pi-gpio");     // here start using the pi!!!
+
 // var morgan = require('morgan');          // log requests to the console (express4)
 // var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
 // var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
