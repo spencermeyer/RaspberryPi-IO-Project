@@ -8,8 +8,9 @@ $( document ).ready(function() {
     //        gpio.close(16);                     // Close pin 16 
     //    });
     //});
+  // first find the current state of the output
   var stateOne = document.getElementById("btn1").innerHTML
-
+  // Now toggle the state of the output when clicked
   if(stateOne=="Channel 1 OFF"){
     console.log(stateOne);
     document.getElementById("btn1").innerHTML="Channel 1 ON";
