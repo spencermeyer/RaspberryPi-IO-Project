@@ -8,13 +8,22 @@ $( document ).ready(function() {
     //        gpio.close(16);                     // Close pin 16 
     //    });
     //});
-  });
+  var stateOne = document.getElementById("btn1").innerHTML
 
+  if(stateOne=="Channel 1 OFF"){
+    console.log(stateOne);
+    document.getElementById("btn1").innerHTML="Channel 1 ON";
+    document.getElementById("btn1").className="btn btn-success btn-lg";
+    stateOne="Channel 1 ON";
+    console.log(stateOne);
+  }
+  else{
+    document.getElementById("btn1").innerHTML="Channel 1 OFF";
+    document.getElementById("btn1").className="btn btn-danger btn-lg";
+  }
 
-
-
-
-
+  
+});
 
 
 });
