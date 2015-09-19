@@ -1,23 +1,29 @@
 $( document ).ready(function() {
+  for (var i=1; i<3.5; i++) {
+    console.log(" and in the loop i is: ",String(i));
+    document.getElementById("btn"+String(i)).addEventListener("click", getClickFunction(i),false);
+  };  // this closes the for loop
+});   // this closes the doc ready
 
-  // for (i=1; i<3.5; i++) {
-
-  document.getElementById("btn1").addEventListener("click", function(){
-      console.log("button 1 clicked");
-
-  // Now toggle the state of the output when clicked
-    if(document.getElementById("btn1").innerHTML=="Channel 1 OFF"){
-      console.log("going into the switch on loop");
-      document.getElementById("btn1").innerHTML="Channel 1 ON";
-      document.getElementById("btn1").className="btn btn-success btn-lg";
+   function getClickFunction(j){
+      return function(){
+        console.log("a call to getClickFunction"+j);
+        console.log("button "+j+" clicked");
+        // Now toggle the state of the output when clicked
+        if(document.getElementById("btn"+String(j)).innerHTML=="Channel "+j+" OFF"){
+          console.log("going into the switch on loop for channel "+j);
+          document.getElementById("btn"+j).innerHTML="Channel "+j+" ON";
+          document.getElementById("btn"+j).className="btn btn-success btn-lg";
+        }
+        else{
+          console.log("going into the switch off loop");
+          document.getElementById("btn"+j).innerHTML="Channel "+j+" OFF";
+          document.getElementById("btn"+j).className="btn btn-danger btn-lg";
+        }
     }
-    else{
-      console.log("going into the switch off loop");
-      document.getElementById("btn1").innerHTML="Channel 1 OFF";
-      document.getElementById("btn1").className="btn btn-danger btn-lg";
-    }
-});
+}
 
-//the for loop}
 
-});
+
+
+
