@@ -15,11 +15,11 @@ $( document ).ready(function() {
           console.log("going into the switch on loop for channel "+j);
           document.getElementById("btn"+j).innerHTML="Channel "+j+" ON";
           document.getElementById("btn"+j).className="btn btn-success btn-lg";
-          // gpio.open(gpioPin, "output", function(err){
-          //  gpio.write(gpioPin,1,function(){
-          // gpio.close(gpioPin);  
-          //})  
-          //})
+           gpio.open(gpioPin, "output", function(err){
+           gpio.write(gpioPin,1,function(){
+           gpio.close(gpioPin);  
+          })  
+          })
         }
         else{
           console.log("going into the switch off loop");
