@@ -18,3 +18,4 @@ to get the GPIO JS Library
 good source for how to use it:
 http://www.robert-drummond.com/2013/06/06/raspberry-pi-gpio-inputoutput-in-javascript/
 
+WELL, GETTING GPIO IS NOT DEFINED IN ACTIONS.JS IN LINE 18.  NEED TO SOLVE.  1.10.15
