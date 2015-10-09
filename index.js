@@ -3,7 +3,9 @@
 // Build a controller
 var express  = require('express');
 var app      = express();                          // create our app w/ express
-gpio = require("pi-gpio");                    // here start using the pi!!!
+var pi-gpio  = require("pi-gpio");                 // here start using the pi!!!
+
+gpio = pi-gpio;
 
 // var morgan = require('morgan');                // log requests to the console (express4)
 // var bodyParser = require('body-parser');       // pull information from HTML POST (express4)
