@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+
+  var gpio = require("pi-gpio");
+  
   for (var i=1; i<3.5; i++) {
     console.log(" and in the loop i is: ",String(i));
     document.getElementById("btn"+String(i)).addEventListener("click", getClickFunction(i),false);
